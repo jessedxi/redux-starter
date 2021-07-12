@@ -1,10 +1,4 @@
-function sayHello() {
-  return function () {
-    return "hello world ";
-  };
-}
+let numbers = [1, 2, 3];
+numbers.map((number) => number * 2);
 
-let fn = sayHello();
-let message = fn();
-
-// High order function is a function that takes a function as an argument
+//.map is a higher order function
