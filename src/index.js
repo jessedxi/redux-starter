@@ -1,4 +1,7 @@
-let numbers = [1, 2, 3];
-numbers.map((number) => number * 2);
+let input = "  JavaScript  ";
+let output = "<div>" + input.trim() + "<div>";
 
-//.map is a higher order function
+// trim string and wrap in div element
+
+const trim = (str) => str.trim();
+const wrapInDiv = (str) => `<div>$${str}</div>`;
