@@ -4,7 +4,6 @@ function add(a) {
   };
 }
 
-const add1 = add(1);
-add1(5);
+add(1)(5);
 
 // Currying takes a function with N args and reduces it to a function with 1 args
