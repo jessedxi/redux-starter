@@ -6,9 +6,8 @@ let output = "<div>" + input.trim() + "<div>";
 // trim string and wrap in div element
 
 const trim = (str) => str.trim();
-const wrapInDiv = (str) => `<div>$${str}</div>`;
-const wrap = (type, str) => `<span>$${str}</span>`;
+const wrap = (type, str) => `<${type}>$${str}</${type}>`;
 const toLowerCase = (str) => str.toLowerCase;
 
-const transform = pipe(trim, toLowerCase, wrapInDiv);
+const transform = pipe(trim, toLowerCase, wrap);
 transform(input);
