@@ -5,6 +5,11 @@ const person = {
     city: "Sam Francisco",
   },
 };
-const updated = { ...person, name: "Bob" };
+const updated = {
+  ...person,
+  address: { ...person.address, city: "New York" },
+  name: "Bob",
+};
 updated.address.city = "New York";
 console.log(person);
+console.log(updated);
