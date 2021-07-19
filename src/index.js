@@ -1,2 +1,2 @@
 const person = { name: "John" };
-Object.assign({}, person);
+Object.assign({}, person, { name: "Bob", age: 30 });
