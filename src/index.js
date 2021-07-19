@@ -1,3 +1,3 @@
 const person = { name: "John" };
-const updated = Object.assign({}, person, { name: "Bob", age: 30 });
+const updated = { ...person, name: "Bob" };
 console.log(updated);
