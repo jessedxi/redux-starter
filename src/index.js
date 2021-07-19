@@ -1,3 +1,10 @@
-const person = { name: "John" };
+const person = {
+  name: "John",
+  address: {
+    country: "USA",
+    city: "Sam Francisco",
+  },
+};
 const updated = { ...person, name: "Bob" };
-console.log(updated);
+updated.address.city = "New York";
+console.log(person);
